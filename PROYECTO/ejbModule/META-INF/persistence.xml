@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="pdt">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/OracleDS</jta-data-source>
+		<class>com.entities.Potrero</class>
+		<class>com.entities.Predio</class>
+		<class>com.entities.Propietario</class>
+		<class>com.entities.Rol</class>
+		<class>com.entities.TipoUso</class>
+		<class>com.entities.Usuario</class>
+		<class>com.entities.Zona</class>
+		<class>com.entities.ZonaUso</class>
+	
+	<properties>
+	<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+	 <property name="hibernate.hbm2ddl.auto" value="none"/>
+		<property name="hibernate.show_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
